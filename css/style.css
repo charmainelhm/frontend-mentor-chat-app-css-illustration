@@ -15,7 +15,7 @@
   --fs-xl: 4.2rem;
   --fs-400: 1.6rem;
   --fs-300: 1.2rem;
-  --fs-200: 0.8rem;
+  --fs-200: 0.9rem;
   --fs-100: 0.7rem;
 }
 
@@ -42,6 +42,39 @@ h1 {
   font-size: var(--fs-xl);
   font-weight: 700;
   color: var(--color-text-primary);
+}
+
+/* Input */
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 210px;
+  padding: 0.5rem;
+  border-radius: 50px;
+  background: var(--color-bg-white);
+}
+
+.input__placeholder {
+  font-size: var(--fs-200);
+  color: var(--color-text-placeholder);
+  margin-left: 1.2rem;
+  padding-top: 3px;
+}
+
+.input__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: var(--color-text-primary);
+  border-radius: 100%;
+}
+
+.input__btn p {
+  font-weight: 700;
+  color: white;
 }
 
 /* Attribution */
