@@ -1,5 +1,5 @@
 :root {
-  --color-text-pale-violet: #d89eff;
+  --color-text-pale-violet: #ffeaff;
   --color-text-mod-violet: #9241c8;
   --color-text-dark-violet: #6e5d7e;
   --color-text-placeholder: #c6cacd;
@@ -14,7 +14,7 @@
 
   --fs-xl: 4.2rem;
   --fs-400: 1.6rem;
-  --fs-300: 1.2rem;
+  --fs-300: 1rem;
   --fs-200: 0.9rem;
   --fs-100: 0.7rem;
 }
@@ -42,6 +42,69 @@ h1 {
   font-size: var(--fs-xl);
   font-weight: 700;
   color: var(--color-text-primary);
+}
+
+/* Media Group */
+.media {
+  display: flex;
+  column-gap: 1rem;
+}
+.media__img {
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid var(--color-text-pale-violet);
+  border-radius: 50%;
+}
+
+.media__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1px 0;
+}
+
+.media__title {
+  font-size: var(--fs-300);
+  font-weight: 500;
+  color: var(--color-text-pale-violet);
+  opacity: 0.9;
+}
+
+.media__description {
+  font-size: var(--fs-100);
+  font-weight: 400;
+  color: var(--color-text-pale-violet);
+  opacity: 0.6;
+}
+
+/* Interface Header */
+.interface-header {
+  background: linear-gradient(
+    to right,
+    var(--color-accent-violet),
+    var(--color-accent-magenta)
+  );
+  color: var(--color-text-pale-violet);
+  display: flex;
+  align-items: center;
+  padding: 2.5rem 1rem 1rem;
+  border-radius: 0 0 7px 7px;
+}
+
+.return-btn {
+  font-weight: 500;
+  transform: scaleX(0.5);
+  opacity: 0.9;
+}
+
+.interface-header .media {
+  margin-left: 0.7rem;
+}
+
+.interface-header .fas {
+  font-size: var(--fs-200);
+  margin-left: auto;
+  opacity: 0.8;
 }
 
 /* Input */
