@@ -1,0 +1,54 @@
+:root {
+  --color-text-pale-violet: #d89eff;
+  --color-text-mod-violet: #9241c8;
+  --color-text-dark-violet: #6e5d7e;
+  --color-text-placeholder: #c6cacd;
+  --color-text-primary: #3e2753;
+  --color-text-secondary: #a39daa;
+  --color-accent-magenta: #e942ff;
+  --color-accent-violet: #8838ff;
+  --color-accent-radio-btn: #e570ff;
+  --color-bg-white: #fff;
+  --color-bg-app: #f5f3f7;
+  --color-bg-main: #fafafa;
+
+  --fs-xl: 4.2rem;
+  --fs-400: 1.6rem;
+  --fs-300: 1.2rem;
+  --fs-200: 0.8rem;
+  --fs-100: 0.7rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-size: var(--fs-400);
+  color: var(--color-text-secondary);
+  background-color: var(--color-bg-main);
+}
+
+h1 {
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
