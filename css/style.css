@@ -8,14 +8,16 @@
   --color-accent-magenta: #e942ff;
   --color-accent-violet: #8838ff;
   --color-accent-radio-btn: #e570ff;
+  --color-bubble-violet: #ede5f4;
   --color-bg-white: #fff;
   --color-bg-app: #f5f3f7;
   --color-bg-main: #fafafa;
+  --color-shadow-app: #a39daa23;
 
   --fs-xl: 4.2rem;
   --fs-400: 1.6rem;
   --fs-300: 1rem;
-  --fs-200: 0.9rem;
+  --fs-200: 0.8rem;
   --fs-100: 0.7rem;
 }
 
@@ -138,6 +140,44 @@ h1 {
 .input__btn p {
   font-weight: 700;
   color: white;
+}
+
+/* Speech Bubble */
+.bubble {
+  max-width: 130px;
+  font-size: var(--fs-200);
+  color: var(--color-text-dark-violet);
+  background: var(--color-bg-white);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 10px 3px var(--color-shadow-app);
+}
+
+.bubble--left {
+  border-bottom-left-radius: 3px;
+}
+
+.bubble--right {
+  border-bottom-right-radius: 3px;
+}
+
+.bubble--purple {
+  color: var(--color-text-mod-violet);
+  background: var(--color-bubble-violet);
+  box-shadow: none;
+}
+
+.bubble--gradient {
+  background: linear-gradient(
+    to right,
+    var(--color-accent-magenta),
+    var(--color-accent-violet)
+  );
+  color: white;
+}
+
+.bubble--long {
+  max-width: 160px;
 }
 
 /* Attribution */
