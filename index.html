@@ -28,7 +28,58 @@
     <title>Frontend Mentor | [Challenge Name Here]</title>
   </head>
   <body>
-    <div class="device"></div>
+    <div class="device">
+      <header class="interface-header">
+        <p class="return-btn">&#60;</p>
+        <div class="media">
+          <img
+            class="media__img"
+            src="images/avatar.jpg"
+            alt="Dog walker's profile picture"
+          />
+          <div class="media__text">
+            <h2 class="media__title">Samuel Green</h2>
+            <h3 class="media__description">Available to Walk</h3>
+          </div>
+        </div>
+        <i class="fas fa-ellipsis-v"></i>
+      </header>
+      <div class="conversation">
+        <p class="bubble bubble--left bubble--purple">
+          That sounds great. I'd be happy to discuss more.
+        </p>
+        <p class="bubble bubble--left bubble--purple">
+          Could you send over some pictures of your dog, please?
+        </p>
+        <div class="photo-group flex--end">
+          <img class="photo" src="images/dog-image-1.jpg" alt="happy dog" />
+          <img class="photo" src="images/dog-image-2.jpg" alt="happy dog" />
+          <img class="photo" src="images/dog-image-3.jpg" alt="happy dog" />
+        </div>
+        <p class="bubble bubble--right flex--end">
+          Here are a few pictures. She's a happy girl!
+        </p>
+        <p class="bubble bubble--right flex--end">Can you make it?</p>
+        <p class="bubble bubble--left bubble--purple">
+          She looks so happy! The time we discussed works. How long shall I take
+          her out for?
+        </p>
+        <div class="bubble bubble--left bubble--gradient bubble--long option">
+          <p class="option__description">30 minute walk</p>
+          <p class="option__price">$29</p>
+        </div>
+        <div class="bubble bubble--left bubble--gradient bubble--long option">
+          <p class="option__description">1 hour walk</p>
+          <p class="option__price">$49</p>
+        </div>
+        <div class="input">
+          <p class="input__placeholder">Type a message...</p>
+          <div class="input__btn">
+            <p>></p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

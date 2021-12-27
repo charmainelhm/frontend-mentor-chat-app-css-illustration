@@ -89,8 +89,9 @@ h1 {
   color: var(--color-text-pale-violet);
   display: flex;
   align-items: center;
-  padding: 2.5rem 1rem 1rem;
-  border-radius: 0 0 7px 7px;
+  padding: 2.8rem 1rem 1rem;
+  border-radius: 20px 20px 7px 7px;
+  box-shadow: 0 8px 10px 6px var(--color-shadow-app);
 }
 
 .return-btn {
@@ -114,7 +115,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 210px;
+  /* width: 210px; */
   padding: 0.5rem;
   border-radius: 50px;
   background: var(--color-bg-white);
@@ -180,6 +181,18 @@ h1 {
   max-width: 160px;
 }
 
+/* Dog Photo Group */
+.photo-group {
+  display: flex;
+  gap: 8px;
+}
+
+.photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
 /* Package option */
 .option {
   display: flex;
@@ -219,6 +232,8 @@ h1 {
   border-radius: 25px;
   position: relative;
   box-shadow: 0 0 10px 10px var(--color-shadow-app);
+  display: flex;
+  flex-direction: column;
 }
 
 .device::before {
@@ -230,8 +245,25 @@ h1 {
   z-index: 10;
   border-radius: 0 0 15px 15px;
   left: 50%;
-  top: -5px;
+  top: -7px;
   transform: translateX(-50%);
+}
+
+/* Conversation */
+.conversation {
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.conversation .flex--end {
+  align-self: flex-end;
+}
+
+.conversation .input {
+  margin-top: auto;
 }
 
 /* Attribution */
