@@ -209,6 +209,31 @@ h1 {
   margin-right: 0.5rem;
 }
 
+/* Device */
+.device {
+  background-color: var(--color-bg-app);
+  width: 250px;
+  height: 500px;
+  margin: 2rem auto 0; /* TEMPT*/
+  border: 8px solid var(--color-bg-white);
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 0 0 10px 10px var(--color-shadow-app);
+}
+
+.device::before {
+  content: "";
+  width: 130px;
+  height: 25px;
+  background-color: var(--color-bg-white);
+  position: absolute;
+  z-index: 10;
+  border-radius: 0 0 15px 15px;
+  left: 50%;
+  top: -5px;
+  transform: translateX(-50%);
+}
+
 /* Attribution */
 .attribution {
   font-size: 11px;
