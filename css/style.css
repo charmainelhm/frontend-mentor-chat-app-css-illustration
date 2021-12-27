@@ -14,7 +14,7 @@
   --color-bg-main: #fafafa;
   --color-shadow-app: #a39daa23;
 
-  --fs-xl: 4.2rem;
+  --fs-xl: 4rem;
   --fs-400: 1.6rem;
   --fs-300: 1rem;
   --fs-200: 0.8rem;
@@ -26,6 +26,11 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 6rem auto;
 }
 
 /* Typography */
@@ -42,7 +47,7 @@ body {
 
 h1 {
   font-size: var(--fs-xl);
-  font-weight: 700;
+  font-weight: 500;
   color: var(--color-text-primary);
 }
 
@@ -227,7 +232,7 @@ h1 {
   background-color: var(--color-bg-app);
   width: 250px;
   height: 500px;
-  margin: 2rem auto 0; /* TEMPT*/
+  margin: 0 auto 6rem;
   border: 8px solid var(--color-bg-white);
   border-radius: 25px;
   position: relative;
@@ -264,6 +269,38 @@ h1 {
 
 .conversation .input {
   margin-top: auto;
+}
+
+/* Main content */
+.page-title,
+.page-text {
+  text-align: center;
+}
+
+.page-text {
+  line-height: 1.8;
+}
+
+.bg-shape {
+  width: 500px;
+  height: 700px;
+  background: linear-gradient(
+    45deg,
+    var(--color-accent-violet),
+    var(--color-accent-magenta)
+  );
+  border-radius: 0 0 250px 250px;
+  position: absolute;
+  z-index: -999;
+  top: -20%;
+  right: 50%;
+}
+
+.bg-shape--light {
+  border-radius: 250px 250px 0 0;
+  left: 50%;
+  top: 70%;
+  opacity: 0.03;
 }
 
 /* Attribution */
