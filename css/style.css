@@ -7,7 +7,7 @@
   --color-text-secondary: #a39daa;
   --color-accent-magenta: #e942ff;
   --color-accent-violet: #8838ff;
-  --color-accent-radio-btn: #e570ff;
+  --color-accent-radio-btn: #eb94ff;
   --color-bubble-violet: #ede5f4;
   --color-bg-white: #fff;
   --color-bg-app: #f5f3f7;
@@ -178,6 +178,35 @@ h1 {
 
 .bubble--long {
   max-width: 160px;
+}
+
+/* Package option */
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option__description {
+  color: var(--color-bubble-violet);
+  opacity: 0.9;
+}
+
+.option__description::before {
+  content: "";
+  display: inline-block;
+  border: 1.5px solid var(--color-accent-radio-btn);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  vertical-align: -32%;
+}
+
+.option__price {
+  font-size: var(--fs-300);
+  font-weight: 700;
+  margin-right: 0.5rem;
 }
 
 /* Attribution */
